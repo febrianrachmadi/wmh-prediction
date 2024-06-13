@@ -4,7 +4,7 @@
 DOCKER_IMAGE="wmh-prediction:0.2.2"
 
 # Installation folder
-INSTALLATION_FOLDER="../WMH-prediction/"
+INSTALLATION_FOLDER="./"
 
 # This docker uses tensorflow: version 2.5.1-gpu
 docker pull tensorflow/tensorflow:2.5.1-gpu
