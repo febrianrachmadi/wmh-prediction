@@ -6,13 +6,14 @@ GPU_ACCESS="--gpus all"
 # docker image name
 DOCKER_IMAGE="wmh-prediction:0.2.2"
 
+HOME_HOST="$PWD"
+DOCKER_IO_DIR="/wmh-prediction/data/IO"
+
 # CHANGEABLE: Location of the MRI data that will be tested "DATA_HOST:DOCKER"
 # On the HOST's machine (DATA_HOST): /home/febrian/LBC1936-data-test
 # On the DOCKER's container: /home/docker/data/MRI
 # Note: Please only change the HOST's machine location (not the DOCKER's)
-HOME_HOST="$PWD"
-DOCKER_IO_DIR="/wmh-prediction/data/IO"
-DATA_HOST=$HOME_HOST"/dataset"
+DATA_HOST=$HOME_HOST"/dataset" # you can change this to something like this "/location/of/your/dataset"
 DATA_DOCKER=$DOCKER_IO_DIR"/input"
 DATA_VOLUME=$DATA_HOST":"$DATA_DOCKER
 

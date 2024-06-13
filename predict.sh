@@ -18,7 +18,7 @@ DEV_VOLUME=$DEV_HOST":"$DEV_DOCKER
 # On the HOST's machine (DATA_HOST): /home/febrian/LBC1936-data-test
 # On the DOCKER's container: /home/docker/data/MRI
 # Note: Please only change the HOST's machine location (not the DOCKER's)
-DATA_HOST=$HOME_HOST"/dataset"
+DATA_HOST=$HOME_HOST"/dataset" # you can change this to something like this "/location/of/your/dataset"
 DATA_DOCKER=$DOCKER_IO_DIR"/input"
 DATA_VOLUME=$DATA_HOST":"$DATA_DOCKER
 
