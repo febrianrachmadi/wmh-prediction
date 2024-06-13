@@ -6,7 +6,7 @@ GPU_ACCESS="--gpus all"
 # docker image name
 DOCKER_IMAGE="wmh-prediction:0.2.2"
 
-HOME_HOST="./wmh-prediction"
+HOME_HOST="$PWD"
 DOCKER_IO_DIR="/wmh-prediction/data/IO"
 
 # run the python test-installation.py code

@@ -10,7 +10,7 @@ DOCKER_IMAGE="wmh-prediction:0.2.2"
 # On the HOST's machine (DATA_HOST): /home/febrian/LBC1936-data-test
 # On the DOCKER's container: /home/docker/data/MRI
 # Note: Please only change the HOST's machine location (not the DOCKER's)
-HOME_HOST="./wmh-prediction"
+HOME_HOST="$PWD"
 DOCKER_IO_DIR="/wmh-prediction/data/IO"
 DATA_HOST=$HOME_HOST"/dataset"
 DATA_DOCKER=$DOCKER_IO_DIR"/input"
