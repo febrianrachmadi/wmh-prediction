@@ -49,9 +49,9 @@ To set the path to your dataset, you need to change the variable of `DATA_HOST` 
 
 If you want to change how the inference process work (e.g., pre-processing, post-processing), you can use the bash file of [`predict-dev.sh`](https://github.com/febrianrachmadi/wmh-prediction/blob/main/predict-dev.sh) which will run [`./wmh-prediction/dev/inference-dev.py`](https://github.com/febrianrachmadi/wmh-prediction/blob/main/dev/inference-dev.py). The bash file `predict-dev.sh` has similar variables like the [`predict.sh`](https://github.com/febrianrachmadi/wmh-prediction/blob/main/predict.sh) with several modifications.
 
-# Create conda env on you machine instead of Docker containers
+# Create virtual environtment on you machine instead of Docker containers
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+Here are list of things that need to be installed on your conda/virtual environment. You can download the trained weights using [`download-weights.py`](https://github.com/febrianrachmadi/wmh-prediction/blob/main/dev/download-weights.py) and use the [`predict-dev.sh`](https://github.com/febrianrachmadi/wmh-prediction/blob/main/predict-dev.sh)  as your main code to edit.
 
  - [ ] NVIDIA GPUs driver and cuda
  - [ ] pip install tensorflow[and-cu da]==2.12.0 (tensorflow with GPU version 2.12 tested just fine)
